@@ -50,21 +50,6 @@ char *ft_itoa_base(int nb, int base)
 
 int main(int argc, char **argv)
 {
-    // int tab[4];
-    // int i;
-
-    // i = 0;
-    // tab[0] = -2147483648;
-    // tab[1] = 2147483647;
-    // tab[2] = 420;
-    // tab[3] = 0;
-    // while (i < 4)
-    // {   
-    //     printf("RF = %d\n", tab[i]);
-    //     printf("MF = %s\n", ft_itoa_base(tab[i], 4));
-    //     printf("\n");
-    //     i++;
-    // }
     if (argc == 3)
 		printf("ret = %s\n", ft_itoa_base(atoi(argv[1]), atoi(argv[2])));
 	return (0);

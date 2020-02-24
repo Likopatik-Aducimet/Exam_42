@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-void fprime(unsigned int nb)
+void    fprime(unsigned int nb)
 {
     unsigned int prime;
+
     if (nb == 1)
         printf("1");
     else
@@ -13,7 +13,7 @@ void fprime(unsigned int nb)
         while (nb > 1)
         {
             if (nb % prime == 0)
-            {   
+            {
                 printf("%d", prime);
                 nb /= prime;
                 if (nb > 1)
@@ -24,7 +24,6 @@ void fprime(unsigned int nb)
         }
     }
 }
-
 int main(int argc, char **argv)
 {
     if (argc != 2)
